@@ -1,10 +1,12 @@
-function evenOrOdd(number) {
-  if (number % 2 === 0) {
-    return 'Even'
-  } else {
-    return 'Odd'
-  }
+function removeEveryOther(arr) {
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (i % 2 === 0) {
+      result.push(arr[i])
+    }
+  }  
+  return result
 }
-let result = evenOrOdd(2);
+let result = removeEveryOther(['Hello', 'Goodbye', 'Hello Again']);
 
 console.log(result);
