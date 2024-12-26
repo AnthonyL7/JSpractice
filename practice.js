@@ -1,12 +1,7 @@
-function removeEveryOther(arr) {
-  let result = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (i % 2 === 0) {
-      result.push(arr[i])
-    }
-  }  
+function repeatStr(n,s) {
+  let result = s.repeat(n);
   return result
 }
-let result = removeEveryOther(['Hello', 'Goodbye', 'Hello Again']);
+let result = repeatStr(5, '#');
 
 console.log(result);
