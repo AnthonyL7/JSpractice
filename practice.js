@@ -1,11 +1,27 @@
-//sum strings
-function sumStr(a,b) {
-  let numA = Number(a);
-  let numB = Number(b);
-  const sum = numA + numB
-  let strA = sum.toString();
-  return strA
+// add7 function
+function add7(num) {
+  return num + 7
 }
-let result = sumStr('4', '5');
+console.log(add7(10))
 
-console.log(result);
+// multiply function
+function multiply(a,b) {
+  return a*b
+}
+console.log(multiply(5,5))
+
+// capitalize function
+function capitalize(str) {
+  let insensitive = str.toLowerCase()
+  return insensitive.charAt(0).toUpperCase() + insensitive.slice(1)
+}
+
+console.log(capitalize('NaMe'))
+
+
+// lastLetter function
+function lastLetter(s) {
+  return s.charAt(s.length-1);
+}
+
+console.log(lastLetter('abcd'))
