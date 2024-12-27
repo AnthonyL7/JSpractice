@@ -1,27 +1,18 @@
-// add7 function
-function add7(num) {
-  return num + 7
-}
-console.log(add7(10))
+let userInput = parseInt(prompt('Enter a number: '))
 
-// multiply function
-function multiply(a,b) {
-  return a*b
-}
-console.log(multiply(5,5))
+for (let i = 1; i <= userInput; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log('FizzBuzz');
+  }
+  else if (i % 3 === 0) {
+    console.log('Fizz');
+  }
+  else if (i % 5 === 0) {
+    console.log('Buzz');
+  }
+  else {
+    console.log(i)
+  }
 
-// capitalize function
-function capitalize(str) {
-  let insensitive = str.toLowerCase()
-  return insensitive.charAt(0).toUpperCase() + insensitive.slice(1)
-}
-
-console.log(capitalize('NaMe'))
-
-
-// lastLetter function
-function lastLetter(s) {
-  return s.charAt(s.length-1);
 }
 
-console.log(lastLetter('abcd'))
