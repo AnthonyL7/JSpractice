@@ -1,2 +1,2 @@
 # JSpractice
-8 Kyu Transportation on vacation
+8 Kyu Is it a palindrome?

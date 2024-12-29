@@ -1,13 +1,12 @@
-function rentalCarCost(d) {
-  cost = 40
-  if (d >= 7 ) {
-    return (40*d) - 50
-  } else if (d >= 3 && d < 7) {
-    return (40*d) - 20
+function isPalindrome(x) {
+  x = x.toLowerCase()
+  reversed = x.split('').reverse().join('')
+  if (x == reversed) {
+    return true
   } else {
-    return 40*d
+    return false
   }
 }
 
-result = rentalCarCost(15)
+result = isPalindrome('AbBa')
 console.log(result)
