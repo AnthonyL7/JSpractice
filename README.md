@@ -1,2 +1,2 @@
 # JSpractice
-8 Kyu Is it a palindrome?
+The Odin Project - JavaScript exercises
