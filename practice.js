@@ -1,32 +1,39 @@
+// Get the age
+const getAge = ({birthYear, deathYear}) =>  deathYear - birthYear;
 
-const books = [
-  {
-    title: "Can't Hurt Me",
-    author: 'David Goggins'
-  },
-  {
-    title: "Grit",
-    author: 'Angela Duckworth'
-  }
-]
+// Create arrow function
+const findTheOldest = function(people) {
 
-const arr = Array.from(books)
-const titles = arr.map(book => book.title)
-console.log(titles)
-
-
-function getTheTitles(titles) {
-  const arr = Array.from(books)
-  return arr.map(titles => titles.title)
+  // Assign accumAge to array index 0 of the arrayPeople list
+  let accumAge = getAge(people[0]);
+  return people.reduce((accum,curr) => {
+    let currAge = getAge(curr)
+    if (currAge > accumAge) {
+      accumAge = currAge;
+      return curr;
+    }
+    return accum
+  })
 }
 
-console.log(getTheTitles([
+
+const arrayPeople = [
   {
-    title: "Can't Hurt Me",
-    author: 'David Goggins'
+    birthYear: 1961,
+    deathYear: 2005
   },
   {
-    title: "Grit",
-    author: 'Angela Duckworth'
-  }
-]))
+    birthYear: 1955,
+    deathYear: 2025 
+  },
+  {
+
+    birthYear: 1923,
+    deathYear: 1999
+  },
+] 
+
+console.log(findTheOldest(arrayPeople))
+
+
+
