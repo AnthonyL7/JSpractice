@@ -1,14 +1,8 @@
-
-function countSheep(num) {
-  let str = ''
-  if (num > 0) {
-    for (let i = 1; i <= num; i++) {
-      str += i + " " + "sheep...";
-    }
-    return str;
-  } else {
-    return '';
-  }
+function gooseFilter (birds) {
+  var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"]
+  const filtered = birds.filter(bird => !geese.includes(bird));
+  return filtered
 }
 
-console.log(countSheep(3))
+let result = gooseFilter(["Mallard", "Barbary", "Hook Bill", "Blue Swedish", "Crested"])
+console.log(result)
