@@ -1,8 +1,7 @@
-function gooseFilter (birds) {
-  var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"]
-  const filtered = birds.filter(bird => !geese.includes(bird));
-  return filtered
+function reverseWords(str) {
+  let reversed = str.split("").reverse().join("")
+  return reversed.split(' ').reverse().join(' ')
 }
 
-let result = gooseFilter(["Mallard", "Barbary", "Hook Bill", "Blue Swedish", "Crested"])
+let result = reverseWords('The quick brown fox jumps over the lazy dog.')
 console.log(result)
