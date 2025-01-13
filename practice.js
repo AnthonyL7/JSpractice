@@ -1,7 +1,8 @@
-function reverseWords(str) {
-  let reversed = str.split("").reverse().join("")
-  return reversed.split(' ').reverse().join(' ')
+function addBinary(a,b) {
+  let sum = a + b;
+  let binary = sum.toString(2);
+  return binary
 }
 
-let result = reverseWords('The quick brown fox jumps over the lazy dog.')
+let result = addBinary(5,9)
 console.log(result)
