@@ -1,10 +1,7 @@
-function countBy(x,n) {
-  let z = [];
-  for (let i = 1; i <= n; i++) {
-    z.push(i * x)
-  }
-  return z
+function getAge(inputString) {
+  let split =  inputString.split('')
+  return parseInt(split[0])
 }
 
-let result = countBy(2,5)
+let result = getAge('4 years old')
 console.log(result)
