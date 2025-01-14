@@ -1,8 +1,10 @@
-function addBinary(a,b) {
-  let sum = a + b;
-  let binary = sum.toString(2);
-  return binary
+function countBy(x,n) {
+  let z = [];
+  for (let i = 1; i <= n; i++) {
+    z.push(i * x)
+  }
+  return z
 }
 
-let result = addBinary(5,9)
+let result = countBy(2,5)
 console.log(result)
