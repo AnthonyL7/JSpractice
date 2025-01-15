@@ -1,15 +1,8 @@
-function getNewNotes(salary, bills) {
-  let sum = 0;
-  for (let i = 0; i < bills.length; i++) {
-    sum += bills[i];
-  }
-  afterExpenses = salary - sum;
-  if (afterExpenses >= 0 ) {
-    return Math.floor(afterExpenses / 5);
-  } else {
-    return 0;
-  }
+function removeChar(str) {
+ let first = str.slice(1)
+ let fixed = first.substring(0, first.length - 1)
+ return fixed
 }
 
-result =  getNewNotes(2300, [590, 1500, 45, 655, 150])
+result =  removeChar('eloquent')
 console.log(result)
