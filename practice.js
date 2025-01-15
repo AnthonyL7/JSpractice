@@ -1,7 +1,10 @@
-function getAge(inputString) {
-  let split =  inputString.split('')
-  return parseInt(split[0])
+function zeroFuel(distanceToPump, mpg, fuelLeft) {
+  if ((fuelLeft * mpg) >= distanceToPump) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
-let result = getAge('4 years old')
+result = zeroFuel(50,25,2)
 console.log(result)
