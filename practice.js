@@ -1,8 +1,21 @@
-function removeChar(str) {
- let first = str.slice(1)
- let fixed = first.substring(0, first.length - 1)
- return fixed
+function getSum(a,b) {
+  let sum = 0;
+  if (a > b) {
+    for (let i = b; i <= a; i++) {
+    
+      sum += i
+    }
+    return sum 
+  
+   } else {
+
+    for (let i = a; i <= b; i++) {
+      
+      sum += i
+    }
+    return sum 
+  }
 }
 
-result =  removeChar('eloquent')
+let result =  getSum(-1,2)
 console.log(result)
