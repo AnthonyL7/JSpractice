@@ -1,21 +1,9 @@
-function getSum(a,b) {
-  let sum = 0;
-  if (a > b) {
-    for (let i = b; i <= a; i++) {
-    
-      sum += i
-    }
-    return sum 
-  
-   } else {
+function isAnagram(a,b) {
+ a = a.toLowerCase().split('').sort().join('');
+ b = b.toLowerCase().split('').sort().join('');
 
-    for (let i = a; i <= b; i++) {
-      
-      sum += i
-    }
-    return sum 
-  }
+ return a === b;
 }
 
-let result =  getSum(-1,2)
+let result =  isAnagram("Buckethead", "DeathCubeK")
 console.log(result)
