@@ -1,18 +1,17 @@
-function sumArray(array) {
-  let min = Math.min(...array)
-  let max = Math.max(...array)
-  let sum = 0;
-  console.log(min, max)
-  if (!Array.isArray(array) || array.length <= 1) {
-    return 0;
-  }
-  for (let i = 0; i < array.length; i++) {
-    if (array[i] != min && array[i] != max) {
-      sum = sum + array[i]
+function stray(numbers) {
+  for (let i of numbers) { 
+    let count = 0;
+    for (let j of numbers) {
+      if (i === j) {
+        count++
+      }
     }
-  } 
-  return sum
+    if (count === 1) {
+      return i
+    }
+  }
+  return -1
 }
 
-let result =  sumArray([3,5,7,10])
+let result =  stray([17, 17, 3, 17, 17, 17, 17])
 console.log(result)
