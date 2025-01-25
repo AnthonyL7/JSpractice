@@ -1,32 +1,23 @@
-
-
-
-/* General setup */
-
-html {
-  font-size: 10px;
-  margin: 0;
-  font-family: 'Macondo', sans-serif, 'Roboto';
-}
-
 body {
-  width: 80%;
-  max-width: 800px;
-  margin: 0 auto;
+  font: 1.2em / 1.5 sans-serif;
+}
+/* Add styles here */
+
+#special {
+  background-color: yellow
 }
 
-/* Typography */
-
-h1 {
-  font-size: 3.2rem;
+.alert {
+  border: 2px solid grey;
 }
 
-h2 {
-  font-size: 2.4rem;
+.alert.stop {
+  background-color: red;
 }
 
-p {
-  font-size: 1.4rem;
-  line-height: 1.6;
-  word-spacing: 0.6rem;
+.alert.go {
+  background-color: green;
 }
+
+
+
