@@ -1,23 +1,23 @@
-body {
-  font: 1.2em / 1.5 sans-serif;
-}
-/* Add styles here */
-
-#special {
-  background-color: yellow
+.container p:first-of-type::first-line{
+  color: red;
+  font-size: 150%;
 }
 
-.alert {
-  border: 2px solid grey;
-}
-
-.alert.stop {
-  background-color: red;
-}
-
-.alert.go {
-  background-color: green;
+a:link {
+  color: orange;
 }
 
 
+a:visited {
+  color: green;
+}
 
+a:hover {
+  text-decoration: none;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #333;
+  color: white;
+  padding-left: 5px;
+}
