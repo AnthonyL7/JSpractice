@@ -3,17 +3,38 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>MDN Advanced Selectors Tasks</title>
+    <title>MDN Your Form</title>
     <link href="style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <ul>
-      <li><a href="https://example.com">Link 1</a></li>
-      <li><a href="http://example.com" title="Visit example.com">Link 2</a></li>
-      <li><a href="/contact">Link 3</a></li>
-      <li><a href="../contact/index.html">Link 4</a></li>
-    </ul>
-  
+    <!DOCTYPE html>
+    <html lang="en-US">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>My test page</title>
+      </head>
+      <body>
+        
+        <form action="/my-handling-form-page" method="post">
+          <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name"/>
+          </p>
+          <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="user_email"/>
+          </p>
+          <p>
+            <label for="msg">Message:</label>
+            <textarea id="msg" name="user_message"></textarea>
+          </p>
+          <p>
+            <button type="submit">Send your message</button>
+          </p>
+        </form>
+      </body>
+    </html>
       <script src="practice.js"></script>
   </body>
 </html>
