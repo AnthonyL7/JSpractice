@@ -9,6 +9,10 @@
         border: 2px dashed red;
       }
 
+      input:invalid:required {
+        background-image: linear-gradient(to right, pink, lightgreen);
+      }
+
       input:valid {
         border: 2px solid black;
       }
@@ -17,7 +21,7 @@
 
 <body>
     <form>
-      <label for="choose">Would you prefer a banana or a cherry?</label>
+      <label for="choose">Would you prefer a banana or a cherry? (required)</label>
       <input id="choose" name="i_like">
       <button>Submit</button>
     </form>
