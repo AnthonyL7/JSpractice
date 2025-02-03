@@ -1,9 +1,6 @@
-function feast(beast,dish) {
-  dish = dish.split('')
-  for (i of beast) {
-    beast = beast.split('')
-  }
+function removeUrlAnchor(url) {
+  return url.split('#')[0]
 }
 
-let result =  feast('great blue heron', 'garlic naan')
+let result =  removeUrlAnchor('www.codewars.com#about')
 console.log(result)
